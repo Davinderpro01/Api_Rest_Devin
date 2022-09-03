@@ -1,4 +1,4 @@
-const mongoose =require('mongoose')
+const mongoose =require('mongoose');
 
 const TracksScheme = new mongoose.Schema(
     {
@@ -46,4 +46,4 @@ const TracksScheme = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model('tracks', TracksScheme)
+module.exports = mongoose.model('tracks', TracksScheme);
