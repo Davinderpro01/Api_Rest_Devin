@@ -87,4 +87,3 @@ const deleteItem = async (req, res) =>{
 };
 
 module.exports = {getItems, getItem, createItem, deleteItem};
-//Devin 
