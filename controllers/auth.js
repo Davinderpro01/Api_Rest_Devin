@@ -18,7 +18,7 @@ const registerCtrl = async (req, res) => {
             token: await tokenSign(dataUser),
             user: dataUser
         }
-    
+        res.status(201)
         res.send({data});
     } catch (e) {
         console.log(e)
@@ -49,6 +49,7 @@ const loginCtrl = async( req, res) =>{
         res.send({data})
 
     } catch (e) {
+        console.log(e)
         handleHttpError(res, 'ERROR_LOGIN_USER')
     }
 }
