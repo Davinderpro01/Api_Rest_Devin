@@ -1,14 +1,14 @@
 const testAuthLogin = {
-    email: "test@test.com",
-    password: "12345678",
-  };
-  
-  const testAuthRegister = {
-    name: "User test",
-    age: 20,
-    email: "test@test.com",
-    password: "12345678",
-  };
+  email : "dsolorzano@gmail.com",
+  password: "12345678"
+}
+
+const testAuthRegister = {
+  name: "2Catman",
+  age: 21,
+  email: "dsolorzano@gmail.com",
+  password: "12345678"
+}
 
   const testAuthRegisterAdmin = {
     name: "User test",
@@ -24,20 +24,20 @@ const testAuthLogin = {
   };
 
   const testDataTrack = {
-    name: "Ejemplo",
-    album: "Ejemplo",
-    cover: "http://image.com",
-    artist: {
-      name: "Ejemplo",
-      nickname: "Ejemplo",
-      nationality: "VE",
+    name :"hello",
+    album :"new",
+    cover :"silence",
+    artist :{
+        name :"Marco",
+        nickname :"banda",
+        nationality :"Gua"
     },
-    duration: {
-      start: 1,
-      end: 3,
+    duration :{
+        start :1,
+        end :0
     },
-    mediaId: "",
-  };
+    mediaId :"3"
+};
   
 
   module.exports = {

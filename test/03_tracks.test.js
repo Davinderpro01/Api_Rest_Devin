@@ -32,8 +32,9 @@ test("deberia registra un item", async () => {
   expect(res.statusCode).toEqual(201);
   expect(body).toHaveProperty("data");
   expect(body).toHaveProperty("data.name");
-  expect(body).toHaveProperty("data.artist");
   expect(body).toHaveProperty("data.cover");
+  expect(body).toHaveProperty("data.artist");
+  
 });
 
 test("should create a return all", async () => {

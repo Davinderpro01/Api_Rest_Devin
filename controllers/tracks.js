@@ -46,6 +46,7 @@ const createItem = async (req, res) =>{
     try{
         const body = matchedData(req)
         const data = await tracksModel.create(body);
+        res.status(201)
         res.send({data});
     }catch(e){
         handleHttpError(res, 'ERROR_CREATE_ITEMS');
@@ -80,7 +81,11 @@ const deleteItem = async (req, res) =>{
         req = matchedData(req);
         const {id} = req;
         const data = await tracksModel.delete({_id:id});
-        res.send({data});
+        const retData = {
+            data,
+            deleted: 1, 
+        }
+        res.send({data: retData});
     } catch (e) {
         handleHttpError(res, 'ERROR_DELETE_ITEM')
     }
