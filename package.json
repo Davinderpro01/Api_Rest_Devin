@@ -37,7 +37,9 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ],
-    "globalTeardown": "./global-kill.js",
     "coverageReporters": ["json", "html"]
+  },
+  "engines": {
+    "node": "16.x"
   }
 }

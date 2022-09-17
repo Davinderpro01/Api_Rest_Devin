@@ -11,7 +11,7 @@ const swaggerDefinition = {
         url: "http://localhost:8081/api",
       },
       {
-        url: "http://localhost:8082/api",
+        url: "https://calm-gorge-39565.herokuapp.com/api",
       },
     ],
     components: {
